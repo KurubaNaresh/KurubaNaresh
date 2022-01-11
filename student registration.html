@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Registration form</title>
+    <script>
+        function popUp(){
+            alert("This page not link any web page")
+        }
+    </script>
+</head>
+<body style="background-color:coral;">
+    <h3>Student Registration Form Using Table in HTML</h3>
+        <fieldset>
+        <!-- <legend></legend> -->
+    <form action=""  method="get" style="border: 1px;">
+        <div>
+            <label for="first name">FIRST NAME :</label>
+            <input type="text"  maxlength="20" minlength="5" required id="first name" placeholder="Fname" >&nbsp; &nbsp;&nbsp;(Max 20 Characters Allowed)
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="last name">LAST NAME :</label>
+            <input type="text" maxlength="20" minlength="5" required id="last name" placeholder="Lname">&nbsp;&nbsp;&nbsp;(Max 20 Characters Allowed)
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="email id">Email ID :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" placeholder="xyz@gmaail.com" required id="email id">
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="mobile number">Mobile Number :</label>
+            <input type="text" placeholder="enter 10digits number" maxlength="11" required  id="mobile number">&nbsp;&nbsp;&nbsp;(10 Digits Allowed)
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="Gender">Gender :</label>
+            <input type="radio" name="Gender" required id="Gender">
+            <Label for="Gender">Male</Label>
+            <input type="radio" name="Gender" required id="Gender">
+            <label for="Gender">Female</label>
+            <input type="radio" name="Gender" required id="Gender">
+            <label for="Gender">Others</label>
+                
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="DOB">Date of Birth(DOB):</label>
+            <input type="Date" name="DOB" required id="DOB">
+            <input type="time" name="DOB">
+            <!-- <input type="Month" name="DOB"> -->
+            <!-- <input type="Year" name="DOB" > -->
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="Address">Address :</label>
+            <textarea name="Address"  cols="30" rows="10" required id="Address"></textarea>
+        </div>
+        <br>
+        <br>
+        <div>
+            
+            <label for="City">City :</label>
+            <input type="text" placeholder="Enter city" required id="City">(Max 15 Characters Allows)
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="Pincode">Pin Code :</label>
+            <input type="text" name="Pin Code" placeholder="pincode" required id="Pincode">(Max 6 Numbers Allowed)
+        </div>
+        <br>
+        <br>
+        <!-- <label for="State">State :</label> -->
+            <!-- <input type="text" name="State"> -->
+        <datalist name="State" id="State" >
+           <option value="Karnataka">Karnataka</option>
+           <option value="Andhra pradesh">Andhra pradesh</option>
+           <option value="Kerala">Kerala</option>
+           <option value="Maharashtra">Maharashtra</option>
+           <option value="TamilNadu"></option>
+           <option value="Goa">Goa</option>
+        </datalist>
+        <div>
+        <label for="State">State :</label>
+        <input list="State" type="text" name="State" required id="State" placeholder="Select State">
+         </div>
+         <br>
+         <br>
+         <label for="Country">Country :</label>
+         <input list="Country" type="text" name="Country" required id="Country" placeholder="Select County">
+         <datalist name="Country" id="Country">
+             <option value="India">India</option>
+             <option value="New York">New York</option>
+             <option value="Utah">Utah</option>
+             <option value="Nevada">Nevada</option>
+             <option value="North Mexico">North Mexico</option>
+         </datalist>
+         <br>
+         <br>
+         <div>
+             <!-- <ul type="square" >
+                 <li>Drawing</li>
+                 <li>Singing</li>
+                 <li>Daancing</li>
+                 <li>Sketching</li>
+                 <li>Others</li>
+
+             </ul> -->
+             <label for="Hobbies">Hobbies :</label>
+             <input type="radio" name="Hobbies">
+             <label for="Hobbies">Drawing</label>
+             <input type="radio" name="Hobbies">
+             <label for="Hobbies">Singing</label>
+             <input type="radio" name="Hobbies">
+             <label for="Hobbies">Dancing</label>
+             <input type="radio" name="Hobbies">
+             <label for="Hobbies">Sketching</label>
+             <input type="radio" name="Hobbies">
+             <label for="Hobbies">Others</label>
+             <input type="text" required id="Hobbies">(Max 20 Characters Allowed)
+         </div>
+        <br>
+        <br>
+        <div>
+            <label for="Qualification">Qualification :</label>
+            <input type="radio" name="Qualification" >
+            <label for="Qualification">High School(10th)</label><br>
+            <input type="radio" name="Qualification">
+            <label for="Qualification">Higher School(12th)</label><br>
+            <input type="radio" name="Qualification">
+            <label for="Qualification">Graducation(Bachelors)</label><br>
+            <input type="radio" name="Qualification" >
+            <label for="Qualification">Post Graduation(Masters)</label><br>
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="file">Upload your Qualification Doucument :</label>
+            <input type="file" name="" >
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="">color :</label>
+            <input type="color">
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="Courses">Courses Applied For :</label>
+            <input type="radio" name="Courses">
+            <label for="Courses">BCA</label>
+            <input type="radio" name="Courses">
+            <label for="Courses">B.com</label>
+            <input type="radio" name="Courses">
+            <label for="Courses">B.Sc</label>
+            <input type="radio" name="Courses">
+            <label for="Courses">MCA</label>
+            <input type="radio" name="Courses">
+            <label for="Courses">M.Com</label>
+        </div>
+        <br>
+        <br>
+        <button type="submit" onclick="popUp()">Submit</button>&nbsp;&nbsp;&nbsp;
+        <button type="reset">Reset</button>
+    </fieldset>
+ 
+    </form>
+    
+</body>
+</html>
